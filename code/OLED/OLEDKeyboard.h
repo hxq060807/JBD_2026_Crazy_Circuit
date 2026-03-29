@@ -30,8 +30,11 @@ extern double CoSub3_OKb[41];
 extern double CoSub4_OKb[31];
 extern double CoSub4_Second_OKb[6];
 extern double CoSub4_Command_OKb[5];
+<<<<<<< HEAD
 
 extern uint32 Current_Track_Page; // 默认从页3加载
+=======
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 /***********************************函数声明***********************************/
 void OLED_Input(void);
 void OLED_Display(void);

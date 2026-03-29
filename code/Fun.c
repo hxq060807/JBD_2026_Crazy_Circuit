@@ -1,5 +1,6 @@
 /*************************************************
 Copyright (C), 2016-2026, TYUT JBD TEAM C.
+<<<<<<< HEAD
 File name: Fun.c
 Author: Cross_Z
 Version:0.0               Date: 2026.1.30
@@ -19,16 +20,43 @@ float Current_Check = 0;
 float Voltage_Check[2] = {0};
 
 /* --------------- é˜ˆå€¼ --------------- */
+=======
+File name: Fun.h
+Author: Cross_Z
+Version:0.0               Date: 2026.1.30
+Description:  Fun.c
+Others:      ÎÞ
+Function List:
+History:
+<author>  <time>      <version > <desc>
+Cross_Z   2026.1.30   0.0        ³õÊ¼
+**************************************************/
+
+#include "Fun.h"
+/*********************************±äÁ¿¶¨Òå*********************************/
+uint8 icm20602_Check = 0;
+uint16 Light_ADC[15] = {0};
+
+/* --------------- Ð£×¼ --------------- */
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 int Light_Raw_Min[15] = {4096, 4096, 4096, 4096, 4096, 4096, 4096,
                         4096, 4096, 4096, 4096, 4096, 4096, 4096, 4096};
 int Light_Raw_Max[15] = {0};
 float  Light_Thr[15][2];
 
+<<<<<<< HEAD
 /*********************************å‡½æ•°å®šä¹‰*********************************/
 
 /*************************************
 ** Function: Vofa_Send_Data
 ** Description: Vofaå‘é€
+=======
+/*********************************º¯Êý¶¨Òå*********************************/
+
+/*************************************
+** Function: Vofa_Send_Data
+** Description: Vofaµ÷ÊÔ
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Vofa_Send_Data(void)
@@ -45,6 +73,7 @@ void Vofa_Send_Data(void)
 //    }
     VOFA_data[0].floatdata = Left_Real_Spd;
     VOFA_data[1].floatdata = Right_Real_Spd;
+<<<<<<< HEAD
     VOFA_data[2].floatdata = Next_Exception;
     VOFA_data[3].floatdata = Execute_Times;
     VOFA_data[4].floatdata = Error;
@@ -53,6 +82,16 @@ void Vofa_Send_Data(void)
     VOFA_data[7].floatdata = imu660rb_gyro_x;
     VOFA_data[8].floatdata = Gyro_Integral;
     VOFA_data[9].floatdata = imu660rb_gyro_z;
+=======
+    VOFA_data[2].floatdata = Count.Mileage;
+    VOFA_data[3].floatdata = Run_Mode;
+    VOFA_data[4].floatdata = Mileage_Times;
+    VOFA_data[5].floatdata = Line_Num_Count;
+    VOFA_data[6].floatdata = Mileage_Stage;
+    VOFA_data[7].floatdata = Execute_Times;
+    VOFA_data[8].floatdata = Finish_Flag;
+    VOFA_data[9].floatdata = Finish_Count;
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
     for(i = 0; i < 10; i++)
     {
@@ -77,7 +116,11 @@ void Vofa_Send_Data(void)
 
 /*************************************
 ** Function: Wit_Send_Data
+<<<<<<< HEAD
 ** Description: å­˜å‚¨æ¨¡å—å‘é€
+=======
+** Description: ´æ´¢Ä£¿é·¢ËÍ
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Wit_Send_Data(void)
@@ -88,12 +131,17 @@ void Wit_Send_Data(void)
 
     int i = 0;
 
+<<<<<<< HEAD
     // èµ›é“å›¾
+=======
+    // ´«Í¼Ïñ
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     for (int i = 0; i < 15; i++)
     {
         VOFA_data[i].floatdata = Light_Convert[i];
     }
 
+<<<<<<< HEAD
     // æ¨¡å¼ä¿¡æ¯
     VOFA_data[15].floatdata = Run_Mode;
     VOFA_data[16].floatdata = Execute_Times;
@@ -106,6 +154,20 @@ void Wit_Send_Data(void)
     uart_write_byte(UART_0, 0x80);
 
     // æ•°æ®æ®µ
+=======
+    // ¿É±ä²ÎÊý
+    VOFA_data[15].floatdata = Run_Mode;
+    VOFA_data[16].floatdata = Error;
+    VOFA_data[17].floatdata = 0;
+
+    // Ö¡Í·
+    uart_write_byte(UART_3, 0x00);
+    uart_write_byte(UART_3, 0x00);
+    uart_write_byte(UART_3, 0x7f);
+    uart_write_byte(UART_3, 0x80);
+
+    // Êý¾Ý¶Î
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     for(i = 0; i < 18; i++)
     {
         data[0] = VOFA_data[i].u8data[0];
@@ -113,6 +175,7 @@ void Wit_Send_Data(void)
         data[2] = VOFA_data[i].u8data[2];
         data[3] = VOFA_data[i].u8data[3];
 
+<<<<<<< HEAD
         uart_write_byte(UART_0, data[0]);
         uart_write_byte(UART_0, data[1]);
         uart_write_byte(UART_0, data[2]);
@@ -124,13 +187,30 @@ void Wit_Send_Data(void)
     uart_write_byte(UART_0, 0x00);
     uart_write_byte(UART_0, 0x80);
     uart_write_byte(UART_0, 0x7f);
+=======
+        uart_write_byte(UART_3, data[0]);
+        uart_write_byte(UART_3, data[1]);
+        uart_write_byte(UART_3, data[2]);
+        uart_write_byte(UART_3, data[3]);
+    }
+
+    // Ö¡Î²
+    uart_write_byte(UART_3, 0x00);
+    uart_write_byte(UART_3, 0x00);
+    uart_write_byte(UART_3, 0x80);
+    uart_write_byte(UART_3, 0x7f);
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
     return;
 }
 
 /*************************************
 ** Function: Light_Init
+<<<<<<< HEAD
 ** Description: å…‰ç”µç®¡åˆå§‹åŒ–
+=======
+** Description: ¹âµç¹Ü³õÊ¼»¯
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Light_Init()
@@ -155,7 +235,11 @@ void Light_Init()
 
 /*************************************
 ** Function: Encoder_Init
+<<<<<<< HEAD
 ** Description: ç¼–ç å™¨åˆå§‹åŒ–
+=======
+** Description: ±àÂëÆ÷³õÊ¼»¯
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Encoder_Init()
@@ -166,7 +250,11 @@ void Encoder_Init()
 
 /*************************************
 ** Function: Motor_Init
+<<<<<<< HEAD
 ** Description: ç”µæœºåˆå§‹åŒ–
+=======
+** Description: µç»ú³õÊ¼»¯
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Motor_Init()
@@ -181,22 +269,38 @@ void Motor_Init()
 
 /*************************************
 ** Function: Other_Init
+<<<<<<< HEAD
 ** Description: å…¶ä»–åˆå§‹åŒ–
 ** Others:åŒ…æ‹¬ä½¿èƒ½å¼€å…³,OLED
+=======
+** Description: ÆäËû³õÊ¼»¯
+** Others:·äÃùÆ÷£¬ÍÓÂÝÒÇ£¬Ê¹ÄÜ¿ª¹Ø,OLED
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 *************************************/
 void Other_Init()
 {
     OLED_Init();
+<<<<<<< HEAD
     gpio_init(P33_4, GPO, 0, GPO_PUSH_PULL);
     gpio_init(P00_2, GPI, 0, GPI_PULL_DOWN);
     gpio_init(P20_10, GPI, 0, GPI_FLOATING_IN);
     adc_init(ADC0_CH10_A10, ADC_12BIT);
     adc_init(ADC0_CH5_A5, ADC_12BIT);
+=======
+    icm20602_Check = icm20602_init();
+    gpio_init(P33_4, GPO, 0, GPO_PUSH_PULL);
+    gpio_init(P00_2, GPI, 0, GPI_PULL_DOWN);
+    gpio_init(P20_10, GPI, 0, GPI_FLOATING_IN);
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 }
 
 /*************************************
 ** Function: Get_Light
+<<<<<<< HEAD
 ** Description: èŽ·å–å…‰ç”µç®¡å€¼
+=======
+** Description: ¶ÁÈ¡¹âµç¹Ü
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Get_Light()
@@ -216,17 +320,24 @@ void Get_Light()
     Light_ADC[2] = adc_convert(ADC0_CH4_A4);
     Light_ADC[1] = adc_convert(ADC0_CH2_A2);
     Light_ADC[0] = adc_convert(ADC0_CH0_A0);
+<<<<<<< HEAD
 
     Current_Check = (adc_convert(ADC0_CH10_A10) * 3.3 / (4095 * 20 * 0.015));
 
     Voltage_Check[1] = Voltage_Check[0];
     Voltage_Check[0] = (adc_convert(ADC0_CH5_A5) * 3.3 * 11 / 4095.0) + 0.567;
     Voltage_Check[0] = 0.3 * Voltage_Check[1] + 0.7 * Voltage_Check[0];
+=======
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 }
 
 /*************************************
 ** Function: Get_Threshold
+<<<<<<< HEAD
 ** Description: é˜ˆå€¼è®¡ç®—
+=======
+** Description: ãÐÖµ½ÃÕý
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Get_Threshold()
@@ -243,12 +354,18 @@ void Get_Threshold()
     {
         uint16_t span = Light_Raw_Max[ch] - Light_Raw_Min[ch];
         if (span == 0) span = 1;
+<<<<<<< HEAD
         float mid_Up   = (float)(Light_Raw_Max[ch] - Light_Raw_Min[ch]) * 3 / 5.0f + Light_Raw_Min[ch];
         float mid_Down = (float)(Light_Raw_Max[ch] - Light_Raw_Min[ch]) * 2 / 5.0f + Light_Raw_Min[ch];
+=======
+        float mid_Up   = (float)(Light_Raw_Max[ch] - Light_Raw_Min[ch]) * 7 / 9.0f + Light_Raw_Min[ch];
+        float mid_Down = (float)(Light_Raw_Max[ch] - Light_Raw_Min[ch]) * 6 / 9.0f + Light_Raw_Min[ch];
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
         Light_Thr[ch][0] = mid_Up;
         Light_Thr[ch][1] = mid_Down;
     }
 }
+<<<<<<< HEAD
 
 /*************************************
 ** Function: Map_Range
@@ -274,3 +391,5 @@ int16_t Map_Range(int16_t min1, int16_t max1, int16_t min2, int16_t max2, int16_
     return mapped_value;
 }
 
+=======
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c

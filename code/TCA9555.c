@@ -8,8 +8,12 @@ Others:
 Function List:
 History:
 <author>  <time>      <version > <desc>
+<<<<<<< HEAD
 Cross_Z   2026.1.27     0.0       初始
 Cross_Z   2026.2.11     1.0      测试能用
+=======
+Cross_Z   2026.1.27   0.0        ʼ
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 **************************************************/
 
 #include "TCA9555.h"

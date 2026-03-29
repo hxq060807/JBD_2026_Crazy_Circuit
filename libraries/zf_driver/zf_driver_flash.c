@@ -211,6 +211,7 @@ void flash_buffer_clear (void)
     memset(flash_union_buffer, 0xFF, EEPROM_PAGE_LENGTH);
 }
 
+<<<<<<< HEAD
 //-------------------------------------------------------------------------------------------------------------------
 // 函数简介     初始化Flash句柄
 // 参数说明     handle      Flash句柄
@@ -285,3 +286,5 @@ uint8 flash_handle_check(flash_handle_t *handle)
     return flash_check(handle->sector_num, handle->page_num);
 }
 
+=======
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c

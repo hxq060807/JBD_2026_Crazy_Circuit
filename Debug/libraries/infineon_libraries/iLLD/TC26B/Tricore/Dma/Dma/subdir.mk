@@ -18,7 +18,11 @@ libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Dma/IfxDma_Dma.o
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Dma/IfxDma_Dma.src: ../libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Dma/IfxDma_Dma.c libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Dma/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/ADS_WorkShop/2026_Crazy_Circuit_V2.0/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/ADS_WorkShop/2026_Crazy_Circuit/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Dma/IfxDma_Dma.o: libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Dma/IfxDma_Dma.src libraries/infineon_libraries/iLLD/TC26B/Tricore/Dma/Dma/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

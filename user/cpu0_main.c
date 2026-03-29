@@ -39,27 +39,45 @@
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
 // 本例程是开源库空工程 可用作移植或者测试各类内外设
+<<<<<<< HEAD
 int imu_Check = 1;
+=======
+int icm_Check = 0;
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
 // **************************** 代码区域 ****************************
 int core0_main(void)
 {
+<<<<<<< HEAD
     clock_init();                   // 获取时钟频率<务必保留>
+=======
+
+
+clock_init();                   // 获取时钟频率<务必保留>
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     debug_init();                   // 初始化默认调试串口
     // 此处编写用户代码 例如外设初始化代码等
     Encoder_Init();
     Motor_Init();
     Other_Init();
     Light_Init();
+<<<<<<< HEAD
     while (imu_Check == 1)
     {
         imu_Check =  imu660rb_init();
     }
+=======
+    icm_Check =  icm20602_init();
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     TCA9555_Init();
     OLED_Input();
     OLED_Data_Load();
     pit_ms_init(CCU60_CH0, 3);
+<<<<<<< HEAD
     uart_init(UART_0, 115200, UART0_TX_P14_0, UART0_RX_P14_1);
+=======
+    uart_init(UART_0,115200,UART0_TX_P14_0,UART0_RX_P14_1);
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     uart_rx_interrupt(UART_0, 1);           // 串口接收中断
     interrupt_global_enable(0);             // 打开全局中断
     // 此处编写用户代码 例如外设初始化代码等
@@ -68,6 +86,7 @@ int core0_main(void)
     while (TRUE)
     {
         // 此处编写需要循环执行的代码
+<<<<<<< HEAD
 //      Wit_Send_Data();
 //        pwm_set_duty(Left_Motor_IN1, 0);
 //        pwm_set_duty(Left_Motor_IN2, 10000);
@@ -76,6 +95,11 @@ int core0_main(void)
 
         Vofa_Send_Data();
 //      system_delay_ms(1);
+=======
+
+        Vofa_Send_Data();
+        system_delay_ms(5);
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
         // 此处编写需要循环执行的代码
     }
 }

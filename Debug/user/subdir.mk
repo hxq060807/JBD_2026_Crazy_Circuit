@@ -26,6 +26,7 @@ user/isr.o
 
 # Each subdirectory must supply rules for building sources it contributes
 user/cpu0_main.src: ../user/cpu0_main.c user/subdir.mk
+<<<<<<< HEAD
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/ADS_WorkShop/2026_Crazy_Circuit_V2.0/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
 user/cpu0_main.o: user/cpu0_main.src user/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
@@ -35,6 +36,17 @@ user/cpu1_main.o: user/cpu1_main.src user/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 user/isr.src: ../user/isr.c user/subdir.mk
 	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/ADS_WorkShop/2026_Crazy_Circuit_V2.0/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+=======
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/ADS_WorkShop/2026_Crazy_Circuit/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+user/cpu0_main.o: user/cpu0_main.src user/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+user/cpu1_main.src: ../user/cpu1_main.c user/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/ADS_WorkShop/2026_Crazy_Circuit/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+user/cpu1_main.o: user/cpu1_main.src user/subdir.mk
+	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
+user/isr.src: ../user/isr.c user/subdir.mk
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/ADS_WorkShop/2026_Crazy_Circuit/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 user/isr.o: user/isr.src user/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 

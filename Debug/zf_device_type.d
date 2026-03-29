@@ -2,10 +2,17 @@ zf_device_type.o :	../libraries/zf_device/zf_device_type.c
 ../libraries/zf_device/zf_device_type.c :
 zf_device_type.o :	..\libraries\zf_device\zf_device_type.h
 ..\libraries\zf_device\zf_device_type.h :
+<<<<<<< HEAD
 zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_debug.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_debug.h" :
 zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_typedef.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_debug.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_debug.h" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_typedef.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 zf_device_type.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_device_type.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -20,6 +27,7 @@ zf_device_type.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\inc
 "D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
 zf_device_type.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h"
 "D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" :
+<<<<<<< HEAD
 zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
 zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
@@ -38,3 +46,23 @@ zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infine
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
 zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_interrupt.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_interrupt.h" :
+=======
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+zf_device_type.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Platform_Types.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Platform_Types.h" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+zf_device_type.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_interrupt.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_interrupt.h" :
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c

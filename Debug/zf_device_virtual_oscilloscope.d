@@ -2,8 +2,13 @@ zf_device_virtual_oscilloscope.o :	../libraries/zf_device/zf_device_virtual_osci
 ../libraries/zf_device/zf_device_virtual_oscilloscope.c :
 zf_device_virtual_oscilloscope.o :	..\libraries\zf_device\zf_device_virtual_oscilloscope.h
 ..\libraries\zf_device\zf_device_virtual_oscilloscope.h :
+<<<<<<< HEAD
 zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_typedef.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\zf_common\zf_common_typedef.h" :
+=======
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_typedef.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\zf_common\zf_common_typedef.h" :
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 zf_device_virtual_oscilloscope.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h"
 "D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\math.h" :
 zf_device_virtual_oscilloscope.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\typeinfo.h"
@@ -18,6 +23,7 @@ zf_device_virtual_oscilloscope.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Taski
 "D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\string.h" :
 zf_device_virtual_oscilloscope.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h"
 "D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stdlib.h" :
+<<<<<<< HEAD
 zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
 zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
@@ -34,3 +40,21 @@ zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\l
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
 zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+=======
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\ifx_types.h" :
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+zf_device_virtual_oscilloscope.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Platform_Types.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Platform_Types.h" :
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\Ifx_TypesTasking.h" :
+zf_device_virtual_oscilloscope.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c

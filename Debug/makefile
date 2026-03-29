@@ -95,7 +95,11 @@ main-build: 2026_Crazy_Circuit.elf secondary-outputs
 2026_Crazy_Circuit.elf: $(OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: TASKING Linker'
+<<<<<<< HEAD
 	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy "E:\ADS_WorkShop\2026_Crazy_Circuit_V2.0\libraries\zf_device\zf_device_config.a" -Wl--map-file="2026_Crazy_Circuit.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lcs_fpu -lfp_fpu -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc26xb -o"2026_Crazy_Circuit.elf" -Wl-o"2026_Crazy_Circuit.hex:IHEX" $(OBJS)
+=======
+	cctc --lsl-file="../Lcf_Tasking_Tricore_Tc.lsl" -Wl-Oc -Wl-OL -Wl-Ot -Wl-Ox -Wl-Oy "E:\ADS_WorkShop\2026_Crazy_Circuit\libraries\zf_device\zf_device_config.a" -Wl--map-file="2026_Crazy_Circuit.map" -Wl-mc -Wl-mf -Wl-mi -Wl-mk -Wl-ml -Wl-mm -Wl-md -Wl-mr -Wl-mu --no-warnings= -Wl--error-limit=42 --fp-model=3 -lcs_fpu -lfp_fpu -lrt --lsl-core=vtc --exceptions --strict --anachronisms --force-c++ -Ctc26xb -o"2026_Crazy_Circuit.elf" -Wl-o"2026_Crazy_Circuit.hex:IHEX" $(OBJS)
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	@echo 'Finished building target: $@'
 	@echo ' '
 

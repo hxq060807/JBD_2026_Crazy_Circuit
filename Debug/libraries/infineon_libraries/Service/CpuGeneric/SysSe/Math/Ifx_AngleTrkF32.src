@@ -1,6 +1,10 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+<<<<<<< HEAD
 	.compiler_invocation	"ctc -f cc49784a --dep-file=Ifx_AngleTrkF32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\code -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\code\\\\OLED -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_common -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_components -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_device -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_driver -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c"
+=======
+	.compiler_invocation	"ctc -f cc37780a --dep-file=Ifx_AngleTrkF32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\code -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\code\\\\OLED -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_common -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_components -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_device -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_driver -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c"
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c'
 
@@ -1332,7 +1336,11 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L97:
+<<<<<<< HEAD
 	.word	6240
+=======
+	.word	6235
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L98
 	.byte	4
@@ -1340,7 +1348,11 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L99
 	.byte	2
 	.byte	'unsigned long int',0,4,7
@@ -1348,6 +1360,7 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	2
 	.byte	'unsigned char',0,1,8,3,1,106,5,1,4
 	.byte	'notSynchronised',0,1
+<<<<<<< HEAD
 	.word	243
 	.byte	1,7,2,35,0,4
 	.byte	'signalLoss',0,1
@@ -1361,10 +1374,26 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	1,4,2,35,0,4
 	.byte	'commError',0,1
 	.word	243
+=======
+	.word	238
+	.byte	1,7,2,35,0,4
+	.byte	'signalLoss',0,1
+	.word	238
+	.byte	1,6,2,35,0,4
+	.byte	'signalDegradation',0,1
+	.word	238
+	.byte	1,5,2,35,0,4
+	.byte	'trackingLoss',0,1
+	.word	238
+	.byte	1,4,2,35,0,4
+	.byte	'commError',0,1
+	.word	238
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	1,3,2,35,0,0
 .L285:
 	.byte	5,1,103,9,4,6
 	.byte	'status',0
+<<<<<<< HEAD
 	.word	222
 	.byte	4,2,35,0,6
 	.byte	'B',0
@@ -1407,11 +1436,56 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	9
 	.byte	'IfxStdIf_Pos_GetPosition',0,1,152,1,19
 	.word	534
+=======
+	.word	217
+	.byte	4,2,35,0,6
+	.byte	'B',0
+	.word	255
+	.byte	1,2,35,0,0,7
+	.byte	'void',0,8
+	.word	417
+	.byte	9
+	.byte	'IfxStdIf_InterfaceDriver',0,2,118,15
+	.word	423
+	.byte	10,1,1,11
+	.word	423
+	.byte	0,8
+	.word	461
+	.byte	9
+	.byte	'IfxStdIf_Pos_OnZeroIrq',0,1,135,1,16
+	.word	470
+.L230:
+	.byte	2
+	.byte	'float',0,4,4,12
+	.word	507
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	516
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetAbsolutePosition',0,1,129,1,19
+	.word	529
+.L278:
+	.byte	2
+	.byte	'long int',0,4,5,12
+	.word	576
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	588
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetOffset',0,1,142,1,18
+	.word	601
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPosition',0,1,152,1,19
+	.word	529
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 .L282:
 	.byte	13,1,95,9,1,14
 	.byte	'IfxStdIf_Pos_Dir_forward',0,0,14
 	.byte	'IfxStdIf_Pos_Dir_backward',0,1,14
 	.byte	'IfxStdIf_Pos_Dir_unknown',0,2,0,12
+<<<<<<< HEAD
 	.word	677
 	.byte	1,1,11
 	.word	428
@@ -1449,6 +1523,45 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	9
 	.byte	'IfxStdIf_Pos_GetResolution',0,1,196,1,18
 	.word	606
+=======
+	.word	672
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	760
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetDirection',0,1,161,1,28
+	.word	773
+	.byte	12
+	.word	384
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	813
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetFault',0,1,168,1,31
+	.word	826
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRawPosition',0,1,184,1,18
+	.word	601
+.L290:
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12
+	.word	899
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	921
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPeriodPerRotation',0,1,175,1,18
+	.word	934
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRefreshPeriod',0,1,190,1,19
+	.word	529
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetResolution',0,1,196,1,18
+	.word	601
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 .L304:
 	.byte	13,1,84,9,1,14
 	.byte	'IfxStdIf_Pos_SensorType_encoder',0,0,14
@@ -1457,6 +1570,7 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	'IfxStdIf_Pos_SensorType_angletrk',0,3,14
 	.byte	'IfxStdIf_Pos_SensorType_igmr',0,4,14
 	.byte	'IfxStdIf_Pos_SensorType_virtual',0,5,0,12
+<<<<<<< HEAD
 	.word	1062
 	.byte	1,1,11
 	.word	428
@@ -1647,12 +1761,205 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.word	512
 	.byte	4,2,35,8,0,8
 	.word	2391
+=======
+	.word	1057
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	1263
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSensorType',0,1,202,1,35
+	.word	1276
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetTurn',0,1,214,1,18
+	.word	601
+	.byte	9
+	.byte	'IfxStdIf_Pos_OnEventA',0,1,221,1,16
+	.word	470
+	.byte	9
+	.byte	'IfxStdIf_Pos_Reset',0,1,239,1,16
+	.word	470
+	.byte	9
+	.byte	'IfxStdIf_Pos_ResetFaults',0,1,248,1,16
+	.word	470
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSpeed',0,1,208,1,19
+	.word	529
+	.byte	9
+	.byte	'IfxStdIf_Pos_Update',0,1,230,1,16
+	.word	470
+	.byte	10,1,1,11
+	.word	423
+	.byte	11
+	.word	576
+	.byte	0,8
+	.word	1500
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetOffset',0,1,255,1,16
+	.word	1514
+	.byte	10,1,1,11
+	.word	423
+	.byte	11
+	.word	507
+	.byte	0,8
+	.word	1551
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetPosition',0,1,134,2,16
+	.word	1565
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRawPosition',0,1,140,2,16
+	.word	1514
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetSpeed',0,1,147,2,16
+	.word	1565
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRefreshPeriod',0,1,154,2,16
+	.word	1565
+	.byte	15
+	.byte	'IfxStdIf_Pos_',0,1,158,2,8,92,6
+	.byte	'driver',0
+	.word	428
+	.byte	4,2,35,0,6
+	.byte	'onZeroIrq',0
+	.word	475
+	.byte	4,2,35,4,6
+	.byte	'getAbsolutePosition',0
+	.word	534
+	.byte	4,2,35,8,6
+	.byte	'getOffset',0
+	.word	606
+	.byte	4,2,35,12,6
+	.byte	'getPosition',0
+	.word	638
+	.byte	4,2,35,16,6
+	.byte	'getDirection',0
+	.word	778
+	.byte	4,2,35,20,6
+	.byte	'getFault',0
+	.word	831
+	.byte	4,2,35,24,6
+	.byte	'getRawPosition',0
+	.word	862
+	.byte	4,2,35,28,6
+	.byte	'getPeriodPerRotation',0
+	.word	939
+	.byte	4,2,35,32,6
+	.byte	'getRefreshPeriod',0
+	.word	982
+	.byte	4,2,35,36,6
+	.byte	'getResolution',0
+	.word	1021
+	.byte	4,2,35,40,6
+	.byte	'getSensorType',0
+	.word	1281
+	.byte	4,2,35,44,6
+	.byte	'getTurn',0
+	.word	1317
+	.byte	4,2,35,48,6
+	.byte	'onEventA',0
+	.word	1347
+	.byte	4,2,35,52,6
+	.byte	'reset',0
+	.word	1378
+	.byte	4,2,35,56,6
+	.byte	'resetFaults',0
+	.word	1406
+	.byte	4,2,35,60,6
+	.byte	'getSpeed',0
+	.word	1440
+	.byte	4,2,35,64,6
+	.byte	'update',0
+	.word	1471
+	.byte	4,2,35,68,6
+	.byte	'setOffset',0
+	.word	1519
+	.byte	4,2,35,72,6
+	.byte	'setPosition',0
+	.word	1570
+	.byte	4,2,35,76,6
+	.byte	'setRawPosition',0
+	.word	1604
+	.byte	4,2,35,80,6
+	.byte	'setSpeed',0
+	.word	1641
+	.byte	4,2,35,84,6
+	.byte	'setRefreshPeriod',0
+	.word	1672
+	.byte	4,2,35,88,0
+.L333:
+	.byte	8
+	.word	1711
+	.byte	16
+	.byte	'IfxStdIf_Pos_getFault',0,3,1,225,2,32
+	.word	384
+	.byte	1,1,17
+	.byte	'stdIf',0,1,225,2,68
+	.word	2215
+	.byte	18,0,8
+	.word	417
+	.byte	8
+	.word	461
+	.byte	8
+	.word	516
+	.byte	8
+	.word	588
+	.byte	8
+	.word	516
+	.byte	8
+	.word	760
+	.byte	8
+	.word	813
+	.byte	8
+	.word	588
+	.byte	8
+	.word	921
+	.byte	8
+	.word	516
+	.byte	8
+	.word	588
+	.byte	8
+	.word	1263
+	.byte	8
+	.word	588
+	.byte	8
+	.word	461
+	.byte	8
+	.word	461
+	.byte	8
+	.word	461
+	.byte	8
+	.word	516
+	.byte	8
+	.word	461
+	.byte	8
+	.word	1500
+	.byte	8
+	.word	1551
+	.byte	8
+	.word	1500
+	.byte	8
+	.word	1551
+	.byte	8
+	.word	1551
+	.byte	3,3,64,9,12,6
+	.byte	'a',0
+	.word	507
+	.byte	4,2,35,0,6
+	.byte	'b',0
+	.word	507
+	.byte	4,2,35,4,6
+	.byte	'out',0
+	.word	507
+	.byte	4,2,35,8,0,8
+	.word	2386
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 .L311:
 	.byte	19
 	.byte	'Ifx_LowPassPt1F32_reset',0,3,3,93,17,1,1
 .L314:
 	.byte	17
 	.byte	'filter',0,3,93,60
+<<<<<<< HEAD
 	.word	2432
 .L316:
 	.byte	18,0,20,1,1,8
@@ -1682,20 +1989,63 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	17
 	.byte	'value',0,5,143,1,43
 	.word	2590
+=======
+	.word	2427
+.L316:
+	.byte	18,0,20,1,1,8
+	.word	2480
+	.byte	19
+	.byte	'Ifx__jump_and_link',0,3,4,61,17,1,1,17
+	.byte	'fun',0,4,61,43
+	.word	2483
+	.byte	18,0,2
+	.byte	'__fract',0,4,128,1,16
+	.byte	'Ifx__float_to_fract',0,3,4,152,2,18
+	.word	2528
+	.byte	1,1,17
+	.byte	'a',0,4,152,2,44
+	.word	507
+	.byte	18,0,2
+	.byte	'unsigned long long int',0,8,7,16
+	.byte	'__ld64',0,3,5,135,1,19
+	.word	2585
+	.byte	1,1,17
+	.byte	'addr',0,5,135,1,32
+	.word	423
+	.byte	18,0,19
+	.byte	'__st64',0,3,5,143,1,17,1,1,17
+	.byte	'addr',0,5,143,1,30
+	.word	423
+	.byte	17
+	.byte	'value',0,5,143,1,43
+	.word	2585
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	18,0
 .L260:
 	.byte	16
 	.byte	'Ifx_AngleTrkF32_bound',0,3,6,73,20
+<<<<<<< HEAD
 	.word	512
+=======
+	.word	507
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	1,1
 .L262:
 	.byte	17
 	.byte	'angle',0,6,73,50
+<<<<<<< HEAD
 	.word	512
 .L264:
 	.byte	17
 	.byte	'periodPerRotation',0,6,73,65
 	.word	512
+=======
+	.word	507
+.L264:
+	.byte	17
+	.byte	'periodPerRotation',0,6,73,65
+	.word	507
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 .L266:
 	.byte	21
 .L267:
@@ -1703,21 +2053,35 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 .L255:
 	.byte	16
 	.byte	'Ifx_AngleTrkF32_boundInput',0,3,6,93,20
+<<<<<<< HEAD
 	.word	512
+=======
+	.word	507
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	1,1
 .L257:
 	.byte	17
 	.byte	'input',0,6,93,55
+<<<<<<< HEAD
 	.word	512
 .L259:
 	.byte	21,18,0,0,22
 	.word	2225
 	.byte	23
 	.word	2259
+=======
+	.word	507
+.L259:
+	.byte	21,18,0,0,22
+	.word	2220
+	.byte	23
+	.word	2254
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	18,0
 .L234:
 	.byte	3,3,72,9,12,6
 	.byte	'cutOffFrequency',0
+<<<<<<< HEAD
 	.word	512
 	.byte	4,2,35,0,6
 	.byte	'gain',0
@@ -1779,10 +2143,74 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	4,2,35,26,6
 	.byte	'positionConst',0
 	.word	512
+=======
+	.word	507
+	.byte	4,2,35,0,6
+	.byte	'gain',0
+	.word	507
+	.byte	4,2,35,4,6
+	.byte	'samplingTime',0
+	.word	507
+	.byte	4,2,35,8,0,24
+	.word	2837
+	.byte	8
+	.word	2904
+	.byte	25
+	.byte	'Ifx_LowPassPt1F32_init',0,3,83,20,1,1,1,1,17
+	.byte	'filter',0,3,83,62
+	.word	2427
+	.byte	17
+	.byte	'config',0,3,83,102
+	.word	2909
+	.byte	0,22
+	.word	2432
+	.byte	23
+	.word	2463
+	.byte	18,0,26
+	.byte	'Ifx_LowPassPt1F32_do',0,3,85,20
+	.word	507
+	.byte	1,1,1,1,17
+	.byte	'filter',0,3,85,60
+	.word	2427
+	.byte	17
+	.byte	'input',0,3,85,76
+	.word	507
+	.byte	0,3,7,103,9,36,6
+	.byte	'rawPosition',0
+	.word	576
+	.byte	4,2,35,0,6
+	.byte	'turn',0
+	.word	576
+	.byte	4,2,35,4,6
+	.byte	'direction',0
+	.word	672
+	.byte	1,2,35,8,6
+	.byte	'status',0
+	.word	384
+	.byte	4,2,35,10,6
+	.byte	'offset',0
+	.word	576
+	.byte	4,2,35,14,6
+	.byte	'reversed',0
+	.word	238
+	.byte	1,2,35,18,6
+	.byte	'periodPerRotation',0
+	.word	899
+	.byte	2,2,35,20,6
+	.byte	'resolution',0
+	.word	576
+	.byte	4,2,35,22,6
+	.byte	'Ts',0
+	.word	507
+	.byte	4,2,35,26,6
+	.byte	'positionConst',0
+	.word	507
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	4,2,35,30,0
 .L242:
 	.byte	3,7,93,9,24,6
 	.byte	'kp',0
+<<<<<<< HEAD
 	.word	512
 	.byte	4,2,35,0,6
 	.byte	'ki',0
@@ -1799,12 +2227,31 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	4,2,35,16,6
 	.byte	'sqrAmplMin',0
 	.word	581
+=======
+	.word	507
+	.byte	4,2,35,0,6
+	.byte	'ki',0
+	.word	507
+	.byte	4,2,35,4,6
+	.byte	'kd',0
+	.word	507
+	.byte	4,2,35,8,6
+	.byte	'errorThreshold',0
+	.word	507
+	.byte	4,2,35,12,6
+	.byte	'sqrAmplMax',0
+	.word	576
+	.byte	4,2,35,16,6
+	.byte	'sqrAmplMin',0
+	.word	576
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	4,2,35,20,0
 .L246:
 	.byte	2
 	.byte	'short int',0,2,5
 .L239:
 	.byte	8
+<<<<<<< HEAD
 	.word	3354
 	.byte	3,7,119,9,112,6
 	.byte	'base',0
@@ -1899,10 +2346,107 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 .L276:
 	.byte	8
 	.word	3056
+=======
+	.word	3349
+	.byte	3,7,119,9,112,6
+	.byte	'base',0
+	.word	3051
+	.byte	36,2,35,0,6
+	.byte	'cfgData',0
+	.word	3243
+	.byte	24,2,35,36,6
+	.byte	'sinIn',0
+	.word	3362
+	.byte	4,2,35,60,6
+	.byte	'cosIn',0
+	.word	3362
+	.byte	4,2,35,64,6
+	.byte	'halfTs',0
+	.word	507
+	.byte	4,2,35,68,6
+	.byte	'angleAtan',0
+	.word	507
+	.byte	4,2,35,72,6
+	.byte	'angleRef',0
+	.word	507
+	.byte	4,2,35,76,6
+	.byte	'angleEst',0
+	.word	507
+	.byte	4,2,35,80,6
+	.byte	'speedEstA',0
+	.word	507
+	.byte	4,2,35,84,6
+	.byte	'speedEstB',0
+	.word	507
+	.byte	4,2,35,88,6
+	.byte	'accelEst',0
+	.word	507
+	.byte	4,2,35,92,6
+	.byte	'angleErr',0
+	.word	507
+	.byte	4,2,35,96,6
+	.byte	'speedLpf',0
+	.word	2386
+	.byte	12,2,35,100,0
+.L226:
+	.byte	8
+	.word	3367
+	.byte	3,7,76,9,48,6
+	.byte	'kp',0
+	.word	507
+	.byte	4,2,35,0,6
+	.byte	'ki',0
+	.word	507
+	.byte	4,2,35,4,6
+	.byte	'kd',0
+	.word	507
+	.byte	4,2,35,8,6
+	.byte	'speedLpfFc',0
+	.word	507
+	.byte	4,2,35,12,6
+	.byte	'errorThreshold',0
+	.word	507
+	.byte	4,2,35,16,6
+	.byte	'sqrAmplMax',0
+	.word	576
+	.byte	4,2,35,20,6
+	.byte	'sqrAmplMin',0
+	.word	576
+	.byte	4,2,35,24,6
+	.byte	'periodPerRotation',0
+	.word	899
+	.byte	2,2,35,28,6
+	.byte	'reversed',0
+	.word	238
+	.byte	1,2,35,30,6
+	.byte	'resolution',0
+	.word	576
+	.byte	4,2,35,32,6
+	.byte	'offset',0
+	.word	576
+	.byte	4,2,35,36,6
+	.byte	'sinIn',0
+	.word	3362
+	.byte	4,2,35,40,6
+	.byte	'cosIn',0
+	.word	3362
+	.byte	4,2,35,44,0,24
+	.word	3602
+.L228:
+	.byte	8
+	.word	3839
+.L237:
+	.byte	8
+	.word	3602
+.L276:
+	.byte	8
+	.word	3051
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	2
 	.byte	'int',0,4,5,2
 	.byte	'unsigned int',0,4,7,26
 	.byte	'memset',0,8,56,17
+<<<<<<< HEAD
 	.word	428
 	.byte	1,1,1,1,27,8,56,33
 	.word	428
@@ -2228,11 +2772,339 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	9
 	.byte	'IfxStdIf_DPipe_ReadEvent',0,13,74,32
 	.word	5693
+=======
+	.word	423
+	.byte	1,1,1,1,27,8,56,33
+	.word	423
+	.byte	27,8,56,36
+	.word	3859
+	.byte	27,8,56,41
+	.word	3866
+	.byte	0,22
+	.word	2488
+	.byte	23
+	.word	2514
+	.byte	18,0,22
+	.word	2540
+	.byte	23
+	.word	2572
+	.byte	18,0,22
+	.word	2611
+	.byte	23
+	.word	2630
+	.byte	18,0,22
+	.word	2646
+	.byte	23
+	.word	2661
+	.byte	23
+	.word	2675
+	.byte	18,0,26
+	.byte	'Ifx_LutAtan2F32_float32',0,9,74,29
+	.word	507
+	.byte	1,1,1,1,17
+	.byte	'y',0,9,74,61
+	.word	507
+	.byte	17
+	.byte	'x',0,9,74,72
+	.word	507
+	.byte	0,22
+	.word	2692
+	.byte	23
+	.word	2725
+	.byte	23
+	.word	2739
+	.byte	21,18,0,0,22
+	.word	2769
+	.byte	23
+	.word	2807
+	.byte	21,28
+	.word	2692
+	.byte	23
+	.word	2725
+	.byte	23
+	.word	2739
+	.byte	29
+	.word	2765
+	.byte	30
+	.word	2766
+	.byte	0,0,18,0,0
+.L343:
+	.byte	8
+	.word	3243
+	.byte	31
+	.byte	'__INDIRECT__',0,6,1,1,1,1,1,9
+	.byte	'__wchar_t',0,6,1,1
+	.word	3349
+	.byte	9
+	.byte	'__size_t',0,6,1,1
+	.word	3866
+	.byte	9
+	.byte	'__ptrdiff_t',0,6,1,1
+	.word	3859
+	.byte	32,1,8
+	.word	4176
+	.byte	9
+	.byte	'__codeptr',0,6,1,1
+	.word	4178
+	.byte	9
+	.byte	'size_t',0,10,24,25
+	.word	3866
+	.byte	9
+	.byte	'boolean',0,11,101,29
+	.word	238
+	.byte	9
+	.byte	'uint8',0,11,105,29
+	.word	238
+	.byte	9
+	.byte	'uint16',0,11,109,29
+	.word	899
+	.byte	9
+	.byte	'uint32',0,11,113,29
+	.word	217
+	.byte	9
+	.byte	'uint64',0,11,118,29
+	.word	2585
+	.byte	9
+	.byte	'sint16',0,11,126,29
+	.word	3349
+	.byte	9
+	.byte	'sint32',0,11,131,1,29
+	.word	576
+	.byte	2
+	.byte	'long long int',0,8,5,9
+	.byte	'sint64',0,11,138,1,29
+	.word	4322
+	.byte	9
+	.byte	'float32',0,11,167,1,29
+	.word	507
+	.byte	9
+	.byte	'pvoid',0,12,57,28
+	.word	423
+	.byte	9
+	.byte	'Ifx_TickTime',0,12,79,28
+	.word	4322
+	.byte	9
+	.byte	'Ifx_SizeT',0,12,92,16
+	.word	3349
+	.byte	8
+	.word	3349
+	.byte	12
+	.word	238
+	.byte	1,1,11
+	.word	423
+	.byte	11
+	.word	423
+	.byte	11
+	.word	4425
+	.byte	11
+	.word	4322
+	.byte	0,8
+	.word	4430
+	.byte	9
+	.byte	'IfxStdIf_DPipe_Write',0,13,92,19
+	.word	4458
+	.byte	9
+	.byte	'IfxStdIf_DPipe_Read',0,13,107,19
+	.word	4458
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetReadCount',0,13,115,18
+	.word	601
+	.byte	33
+	.word	238
+	.byte	8
+	.word	4556
+	.byte	12
+	.word	4561
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	4566
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetReadEvent',0,13,123,36
+	.word	4579
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetWriteCount',0,13,147,1,18
+	.word	601
+	.byte	8
+	.word	4566
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetWriteEvent',0,13,155,1,37
+	.word	4658
+	.byte	12
+	.word	238
+	.byte	1,1,11
+	.word	423
+	.byte	11
+	.word	3349
+	.byte	11
+	.word	4322
+	.byte	0,8
+	.word	4701
+	.byte	9
+	.byte	'IfxStdIf_DPipe_CanReadCount',0,13,166,1,19
+	.word	4724
+	.byte	9
+	.byte	'IfxStdIf_DPipe_CanWriteCount',0,13,177,1,19
+	.word	4724
+	.byte	12
+	.word	238
+	.byte	1,1,11
+	.word	423
+	.byte	11
+	.word	4322
+	.byte	0,8
+	.word	4804
+	.byte	9
+	.byte	'IfxStdIf_DPipe_FlushTx',0,13,186,1,19
+	.word	4822
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ClearTx',0,13,200,1,16
+	.word	470
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ClearRx',0,13,193,1,16
+	.word	470
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnReceive',0,13,208,1,16
+	.word	470
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnTransmit',0,13,215,1,16
+	.word	470
+	.byte	9
+	.byte	'IfxStdIf_DPipe_OnError',0,13,222,1,16
+	.word	470
+	.byte	12
+	.word	217
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	5024
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetSendCount',0,13,131,1,18
+	.word	5037
+	.byte	12
+	.word	4322
+	.byte	1,1,11
+	.word	423
+	.byte	0,8
+	.word	5079
+	.byte	9
+	.byte	'IfxStdIf_DPipe_GetTxTimeStamp',0,13,139,1,24
+	.word	5092
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ResetSendCount',0,13,229,1,16
+	.word	470
+	.byte	15
+	.byte	'IfxStdIf_DPipe_',0,13,233,1,8,76,6
+	.byte	'driver',0
+	.word	428
+	.byte	4,2,35,0,6
+	.byte	'txDisabled',0
+	.word	238
+	.byte	1,2,35,4,6
+	.byte	'write',0
+	.word	4463
+	.byte	4,2,35,8,6
+	.byte	'read',0
+	.word	4492
+	.byte	4,2,35,12,6
+	.byte	'getReadCount',0
+	.word	4520
+	.byte	4,2,35,16,6
+	.byte	'getReadEvent',0
+	.word	4584
+	.byte	4,2,35,20,6
+	.byte	'getWriteCount',0
+	.word	4620
+	.byte	4,2,35,24,6
+	.byte	'getWriteEvent',0
+	.word	4663
+	.byte	4,2,35,28,6
+	.byte	'canReadCount',0
+	.word	4729
+	.byte	4,2,35,32,6
+	.byte	'canWriteCount',0
+	.word	4766
+	.byte	4,2,35,36,6
+	.byte	'flushTx',0
+	.word	4827
+	.byte	4,2,35,40,6
+	.byte	'clearTx',0
+	.word	4859
+	.byte	4,2,35,44,6
+	.byte	'clearRx',0
+	.word	4891
+	.byte	4,2,35,48,6
+	.byte	'onReceive',0
+	.word	4923
+	.byte	4,2,35,52,6
+	.byte	'onTransmit',0
+	.word	4957
+	.byte	4,2,35,56,6
+	.byte	'onError',0
+	.word	4992
+	.byte	4,2,35,60,6
+	.byte	'getSendCount',0
+	.word	5042
+	.byte	4,2,35,64,6
+	.byte	'getTxTimeStamp',0
+	.word	5097
+	.byte	4,2,35,68,6
+	.byte	'resetSendCount',0
+	.word	5136
+	.byte	4,2,35,72,0,9
+	.byte	'IfxStdIf_DPipe',0,13,71,32
+	.word	5175
+	.byte	8
+	.word	4430
+	.byte	8
+	.word	4430
+	.byte	8
+	.word	588
+	.byte	8
+	.word	4566
+	.byte	8
+	.word	588
+	.byte	8
+	.word	4566
+	.byte	8
+	.word	4701
+	.byte	8
+	.word	4701
+	.byte	8
+	.word	4804
+	.byte	8
+	.word	461
+	.byte	8
+	.word	461
+	.byte	8
+	.word	461
+	.byte	8
+	.word	461
+	.byte	8
+	.word	461
+	.byte	8
+	.word	5024
+	.byte	8
+	.word	5079
+	.byte	8
+	.word	461
+	.byte	33
+	.word	238
+	.byte	8
+	.word	5683
+	.byte	9
+	.byte	'IfxStdIf_DPipe_WriteEvent',0,13,73,32
+	.word	5688
+	.byte	9
+	.byte	'IfxStdIf_DPipe_ReadEvent',0,13,74,32
+	.word	5688
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	13,1,76,9,1,14
 	.byte	'IfxStdIf_Pos_ResolutionFactor_oneFold',0,1,14
 	.byte	'IfxStdIf_Pos_ResolutionFactor_twoFold',0,2,14
 	.byte	'IfxStdIf_Pos_ResolutionFactor_fourFold',0,4,0,9
 	.byte	'IfxStdIf_Pos_ResolutionFactor',0,1,81,3
+<<<<<<< HEAD
 	.word	5765
 	.byte	9
 	.byte	'IfxStdIf_Pos_SensorType',0,1,92,3
@@ -2267,6 +3139,42 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	9
 	.byte	'Ifx_AngleTrkF32',0,7,134,1,3
 	.word	3372
+=======
+	.word	5760
+	.byte	9
+	.byte	'IfxStdIf_Pos_SensorType',0,1,92,3
+	.word	1057
+	.byte	9
+	.byte	'IfxStdIf_Pos_Dir',0,1,100,3
+	.word	672
+	.byte	9
+	.byte	'IfxStdIf_Pos_Status',0,1,114,3
+	.word	384
+	.byte	9
+	.byte	'IfxStdIf_Pos_RawAngle',0,1,116,16
+	.word	576
+	.byte	9
+	.byte	'IfxStdIf_Pos',0,1,119,30
+	.word	1711
+	.byte	9
+	.byte	'Ifx_LowPassPt1F32',0,3,69,3
+	.word	2386
+	.byte	9
+	.byte	'Ifx_LowPassPt1F32_Config',0,3,77,3
+	.word	2837
+	.byte	9
+	.byte	'Ifx_AngleTrkF32_Config',0,7,91,3
+	.word	3602
+	.byte	9
+	.byte	'Ifx_AngleTrkF32_CfgData',0,7,101,3
+	.word	3243
+	.byte	9
+	.byte	'Ifx_AngleTrkF32_PosIf',0,7,116,3
+	.word	3051
+	.byte	9
+	.byte	'Ifx_AngleTrkF32',0,7,134,1,3
+	.word	3367
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -2291,6 +3199,7 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 .L398:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0,0
+<<<<<<< HEAD
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\StdIf\\IfxStdIf_Pos.h',0
 	.byte	0,0,0
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\StdIf\\IfxStdIf.h',0
@@ -2300,30 +3209,57 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
 	.byte	0,0,0
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+=======
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\StdIf\\IfxStdIf_Pos.h',0
+	.byte	0,0,0
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\StdIf\\IfxStdIf.h',0
+	.byte	0,0,0
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\SysSe\\Math\\Ifx_LowPassPt1F32.h',0
+	.byte	0,0,0
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
+	.byte	0,0,0
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	0,0,0
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0,0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_AngleTrkF32.h',0,0,0,0
 	.byte	'string.h',0,1,0,0
 	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutAtan2F32.h',0,0,0,0
 	.byte	'stddef.h',0,1,0,0
+<<<<<<< HEAD
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
 	.byte	0,0,0
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0
+=======
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\StdIf\\IfxStdIf_DPipe.h',0
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	0,0,0,0
 .L399:
 .L397:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_init')
 	.sect	'.debug_info'
 .L100:
+<<<<<<< HEAD
 	.word	368
+=======
+	.word	363
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L101
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L103,.L102
 	.byte	2
 	.word	.L96
@@ -2521,13 +3457,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_initConfig')
 	.sect	'.debug_info'
 .L105:
+<<<<<<< HEAD
 	.word	365
+=======
+	.word	360
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L106
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L108,.L107
 	.byte	2
 	.word	.L96
@@ -2637,13 +3581,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_step')
 	.sect	'.debug_info'
 .L110:
+<<<<<<< HEAD
 	.word	704
+=======
+	.word	699
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L111
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L113,.L112
 	.byte	2
 	.word	.L96
@@ -2925,13 +3877,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_updateStatus')
 	.sect	'.debug_info'
 .L115:
+<<<<<<< HEAD
 	.word	384
+=======
+	.word	379
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L116
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L118,.L117
 	.byte	2
 	.word	.L96
@@ -3016,13 +3976,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getAbsolutePosition')
 	.sect	'.debug_info'
 .L120:
+<<<<<<< HEAD
 	.word	318
+=======
+	.word	313
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L121
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L123,.L122
 	.byte	2
 	.word	.L96
@@ -3092,13 +4060,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getDirection')
 	.sect	'.debug_info'
 .L125:
+<<<<<<< HEAD
 	.word	311
+=======
+	.word	306
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L126
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L128,.L127
 	.byte	2
 	.word	.L96
@@ -3146,13 +4122,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getFault')
 	.sect	'.debug_info'
 .L130:
+<<<<<<< HEAD
 	.word	307
+=======
+	.word	302
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L131
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L133,.L132
 	.byte	2
 	.word	.L96
@@ -3200,13 +4184,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getOffset')
 	.sect	'.debug_info'
 .L135:
+<<<<<<< HEAD
 	.word	308
+=======
+	.word	303
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L136
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L138,.L137
 	.byte	2
 	.word	.L96
@@ -3254,13 +4246,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getPeriodPerRotation')
 	.sect	'.debug_info'
 .L140:
+<<<<<<< HEAD
 	.word	319
+=======
+	.word	314
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L141
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L143,.L142
 	.byte	2
 	.word	.L96
@@ -3308,13 +4308,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getPosition')
 	.sect	'.debug_info'
 .L145:
+<<<<<<< HEAD
 	.word	310
+=======
+	.word	305
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L146
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L148,.L147
 	.byte	2
 	.word	.L96
@@ -3368,13 +4376,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getRawPosition')
 	.sect	'.debug_info'
 .L150:
+<<<<<<< HEAD
 	.word	331
+=======
+	.word	326
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L151
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L153,.L152
 	.byte	2
 	.word	.L96
@@ -3426,13 +4442,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getRefreshPeriod')
 	.sect	'.debug_info'
 .L155:
+<<<<<<< HEAD
 	.word	315
+=======
+	.word	310
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L156
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L158,.L157
 	.byte	2
 	.word	.L96
@@ -3480,13 +4504,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getResolution')
 	.sect	'.debug_info'
 .L160:
+<<<<<<< HEAD
 	.word	312
+=======
+	.word	307
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L161
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L163,.L162
 	.byte	2
 	.word	.L96
@@ -3534,13 +4566,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getTurn')
 	.sect	'.debug_info'
 .L165:
+<<<<<<< HEAD
 	.word	306
+=======
+	.word	301
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L166
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L168,.L167
 	.byte	2
 	.word	.L96
@@ -3588,13 +4628,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getSensorType')
 	.sect	'.debug_info'
 .L170:
+<<<<<<< HEAD
 	.word	312
+=======
+	.word	307
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L171
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L173,.L172
 	.byte	2
 	.word	.L96
@@ -3644,13 +4692,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_getSpeed')
 	.sect	'.debug_info'
 .L175:
+<<<<<<< HEAD
 	.word	306
+=======
+	.word	301
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L176
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L178,.L177
 	.byte	2
 	.word	.L96
@@ -3698,13 +4754,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_reset')
 	.sect	'.debug_info'
 .L180:
+<<<<<<< HEAD
 	.word	337
+=======
+	.word	332
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L181
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L183,.L182
 	.byte	2
 	.word	.L96
@@ -3739,7 +4803,11 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 .L651:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0,0,0,0
+<<<<<<< HEAD
 	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\SysSe\\Math\\Ifx_LowPassPt1F32.h',0
+=======
+	.byte	'E:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\SysSe\\Math\\Ifx_LowPassPt1F32.h',0
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	0,0,0,0
 .L652:
 	.byte	5,32,7,0,5,2
@@ -3799,13 +4867,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_resetFaults')
 	.sect	'.debug_info'
 .L185:
+<<<<<<< HEAD
 	.word	306
+=======
+	.word	301
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L186
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L188,.L187
 	.byte	2
 	.word	.L96
@@ -3851,13 +4927,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setOffset')
 	.sect	'.debug_info'
 .L190:
+<<<<<<< HEAD
 	.word	342
+=======
+	.word	337
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L191
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L193,.L192
 	.byte	2
 	.word	.L96
@@ -3908,13 +4992,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setRefreshPeriod')
 	.sect	'.debug_info'
 .L195:
+<<<<<<< HEAD
 	.word	337
+=======
+	.word	332
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L196
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L198,.L197
 	.byte	2
 	.word	.L96
@@ -3961,13 +5053,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_update')
 	.sect	'.debug_info'
 .L200:
+<<<<<<< HEAD
 	.word	366
+=======
+	.word	361
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L201
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L203,.L202
 	.byte	2
 	.word	.L96
@@ -4061,13 +5161,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_stdIfPosInit')
 	.sect	'.debug_info'
 .L205:
+<<<<<<< HEAD
 	.word	330
+=======
+	.word	325
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L206
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L208,.L207
 	.byte	2
 	.word	.L96
@@ -4210,13 +5318,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setUserSampling')
 	.sect	'.debug_info'
 .L210:
+<<<<<<< HEAD
 	.word	325
+=======
+	.word	320
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L211
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L213,.L212
 	.byte	2
 	.word	.L96
@@ -4269,13 +5385,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('round_f')
 	.sect	'.debug_info'
 .L215:
+<<<<<<< HEAD
 	.word	304
+=======
+	.word	299
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L216
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L218,.L217
 	.byte	2
 	.word	.L96
@@ -4343,13 +5467,21 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_AngleTrkF32_setControlGains')
 	.sect	'.debug_info'
 .L220:
+<<<<<<< HEAD
 	.word	353
+=======
+	.word	348
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L221
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_AngleTrkF32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L223,.L222
 	.byte	2
 	.word	.L96
@@ -4859,16 +5991,27 @@ __Ifx_AngleTrkF32_stdIfPosInit_function_end:
 	.half	1
 	.byte	95
 	.word	0,0
+<<<<<<< HEAD
 .L271:
 	.word	-1,.L57,.L383-.L57,.L384-.L57
 	.half	1
 	.byte	81
 	.word	0,0
+=======
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 .L268:
 	.word	-1,.L57,.L382-.L57,.L269-.L57
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
+<<<<<<< HEAD
+=======
+.L271:
+	.word	-1,.L57,.L383-.L57,.L384-.L57
+	.half	1
+	.byte	81
+	.word	0,0
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 .L258:
 	.word	0,0
 .L265:

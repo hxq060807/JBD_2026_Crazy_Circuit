@@ -2,6 +2,7 @@ IfxDma_cfg.o :	../libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxDma_c
 ../libraries/infineon_libraries/iLLD/TC26B/Tricore/_Impl/IfxDma_cfg.c :
 IfxDma_cfg.o :	..\libraries\infineon_libraries\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.h
 ..\libraries\infineon_libraries\iLLD\TC26B\Tricore\_Impl\IfxDma_cfg.h :
+<<<<<<< HEAD
 IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
 IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
@@ -16,3 +17,19 @@ IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_l
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h" :
 IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
 "E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+=======
+IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+IfxDma_cfg.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h" :
+IfxDma_cfg.o :	"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
+"E:\\ADS_WorkShop\\2026_Crazy_Circuit\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c

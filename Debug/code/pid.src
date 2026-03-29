@@ -1,6 +1,10 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+<<<<<<< HEAD
 	.compiler_invocation	"ctc -f cc56916a --dep-file=pid.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\code -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\code\\\\OLED -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_common -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_components -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_device -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\libraries\\\\zf_driver -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit_V2.0\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/pid.src ../code/pid.c"
+=======
+	.compiler_invocation	"ctc -f cc37100a --dep-file=pid.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\code -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\code\\\\OLED -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_common -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_components -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_device -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\libraries\\\\zf_driver -IE:\\\\ADS_WorkShop\\\\2026_Crazy_Circuit\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/pid.src ../code/pid.c"
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.compiler_name		"ctc"
 	;source	'../code/pid.c'
 
@@ -351,7 +355,11 @@ __PID_cleardata_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L33:
+<<<<<<< HEAD
 	.word	692
+=======
+	.word	687
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L34
 	.byte	4
@@ -359,13 +367,18 @@ __PID_cleardata_function_end:
 	.byte	1
 	.byte	'../code/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L35
 .L51:
 	.byte	2
 	.byte	'float',0,4,4,3,1,11,9,1,4
 	.byte	'PID_MODE_POSITION',0,0,4
 	.byte	'PID_MODE_ADD',0,1,0,5,12
+<<<<<<< HEAD
 	.word	156
 	.byte	6,2,0,7,1,29,9,56,8
 	.byte	'mode',0
@@ -458,6 +471,100 @@ __PID_cleardata_function_end:
 	.byte	10
 	.byte	'PID_HandleTypeDef',0,1,49,2
 	.word	215
+=======
+	.word	151
+	.byte	6,2,0,7,1,29,9,56,8
+	.byte	'mode',0
+	.word	160
+	.byte	1,2,35,0,8
+	.byte	'set',0
+	.word	151
+	.byte	4,2,35,2,8
+	.byte	'err3',0
+	.word	201
+	.byte	12,2,35,6,8
+	.byte	'kp',0
+	.word	151
+	.byte	4,2,35,18,8
+	.byte	'ki',0
+	.word	151
+	.byte	4,2,35,22,8
+	.byte	'kd',0
+	.word	151
+	.byte	4,2,35,26,8
+	.byte	'pOut',0
+	.word	151
+	.byte	4,2,35,30,8
+	.byte	'iOut',0
+	.word	151
+	.byte	4,2,35,34,8
+	.byte	'dOut',0
+	.word	151
+	.byte	4,2,35,38,8
+	.byte	'out',0
+	.word	151
+	.byte	4,2,35,42,8
+	.byte	'iOutMax',0
+	.word	151
+	.byte	4,2,35,46,8
+	.byte	'outMax',0
+	.word	151
+	.byte	4,2,35,50,0
+.L53:
+	.byte	9
+	.word	210
+	.byte	7,1,18,9,24,8
+	.byte	'mode',0
+	.word	160
+	.byte	1,2,35,0,8
+	.byte	'kp',0
+	.word	151
+	.byte	4,2,35,2,8
+	.byte	'ki',0
+	.word	151
+	.byte	4,2,35,6,8
+	.byte	'kd',0
+	.word	151
+	.byte	4,2,35,10,8
+	.byte	'iOutMax',0
+	.word	151
+	.byte	4,2,35,14,8
+	.byte	'outMax',0
+	.word	151
+	.byte	4,2,35,18,0
+.L59:
+	.byte	9
+	.word	386
+	.byte	2
+	.byte	'short int',0,2,5,10
+	.byte	'__wchar_t',0,2,1,1
+	.word	480
+	.byte	2
+	.byte	'unsigned int',0,4,7,10
+	.byte	'__size_t',0,2,1,1
+	.word	511
+	.byte	11,1,9
+	.word	544
+	.byte	10
+	.byte	'__codeptr',0,2,1,1
+	.word	546
+	.byte	2
+	.byte	'int',0,4,5,10
+	.byte	'__intptr_t',0,2,1,1
+	.word	569
+	.byte	10
+	.byte	'__uintptr_t',0,2,1,1
+	.word	511
+	.byte	10
+	.byte	'PID_MODE_TypeDef',0,1,15,2
+	.word	160
+	.byte	10
+	.byte	'PID_InitTypeDef',0,1,26,2
+	.word	386
+	.byte	10
+	.byte	'PID_HandleTypeDef',0,1,49,2
+	.word	210
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.byte	0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -482,13 +589,21 @@ __PID_cleardata_function_end:
 	.sdecl	'.debug_info',debug,cluster('PID_calc')
 	.sect	'.debug_info'
 .L36:
+<<<<<<< HEAD
 	.word	263
+=======
+	.word	258
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L37
 	.byte	4,1
 	.byte	'../code/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L39,.L38
 	.byte	2
 	.word	.L32
@@ -708,13 +823,21 @@ __PID_cleardata_function_end:
 	.sdecl	'.debug_info',debug,cluster('PID_init')
 	.sect	'.debug_info'
 .L41:
+<<<<<<< HEAD
 	.word	232
+=======
+	.word	227
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L42
 	.byte	4,1
 	.byte	'../code/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L44,.L43
 	.byte	2
 	.word	.L32
@@ -789,13 +912,21 @@ __PID_cleardata_function_end:
 	.sdecl	'.debug_info',debug,cluster('PID_cleardata')
 	.sect	'.debug_info'
 .L46:
+<<<<<<< HEAD
 	.word	221
+=======
+	.word	216
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.half	3
 	.word	.L47
 	.byte	4,1
 	.byte	'../code/pid.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+<<<<<<< HEAD
 	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit_V2.0\\Debug\\',0,12,1
+=======
+	.byte	'E:\\ADS_WorkShop\\2026_Crazy_Circuit\\Debug\\',0,12,1
+>>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 	.word	.L49,.L48
 	.byte	2
 	.word	.L32
