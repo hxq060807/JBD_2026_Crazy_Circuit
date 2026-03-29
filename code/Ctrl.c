@@ -1,33 +1,20 @@
 /*************************************************
 Copyright (C), 2016-2026, TYUT JBD TEAM C.
-<<<<<<< HEAD
 File name: Ctrl.c
 Author: Cross_Z
 Version:0.0               Date: 2026.1.30
 Description: Ctrl.c
-=======
-File name: Fun.h
-Author: Cross_Z
-Version:0.0               Date: 2026.1.30
-Description:  Ctrl.c
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 Others:      无
 Function List:
 History:
 <author>  <time>      <version > <desc>
 Cross_Z   2026.1.30    0.0        初始
-<<<<<<< HEAD
 Cross_Z   2026.3.25    1.0        规则突变，更换思路
 **************************************************/
 
 #include "Ctrl.h"
 #include "zf_driver_flash.h"
 
-=======
-**************************************************/
-
-#include "Ctrl.h"
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 /*********************************变量定义*********************************/
 /*---------------速度-----------------*/
 int16 giSpeed_Right[3] = {0}; // 右测速
@@ -37,10 +24,7 @@ int Right_Real_Spd = 0;     // 右实际
 int Left_Exp_Spd = 0;       // 左期望
 int Right_Exp_Spd = 0;      // 右期望
 int Basic_Speed = 0;
-<<<<<<< HEAD
 int Run_Speed = 0;
-=======
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 float Average_Speed = 0;
 float Last_Average_Speed = 0;
 int Speed_Get_Count = 1;
@@ -53,11 +37,7 @@ uint8 Light_Convert[15] = {0};
 uint8 Last_Light_Convert[15] = {0};
 
 /*-----------------PID----------------*/
-<<<<<<< HEAD
 float Gyro_Z[2] = {0};
-=======
-int16 Gyro_Z = 0;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 PID_HandleTypeDef Gyro_PID = GYRO_PID;
 PID_HandleTypeDef Left_PID = LEFT_PID;
 PID_HandleTypeDef Right_PID = RIGHT_PID;
@@ -81,7 +61,6 @@ uint8_t Left_Flag = 0;       // 左侧点数量
 uint8_t Right_Flag = 0;      // 右侧点数量
 int Middle = 0;
 float Gyro_Integral = 0;
-<<<<<<< HEAD
 int8_t Dir_Arr[15] = {-30, -20, -16, -12, -10, -7, -3, 0, 3, 7, 10, 12, 16, 20, 30};
 
 /*-------------赛道结构体--------------*/
@@ -96,16 +75,6 @@ uint8_t In_Line_Ele_Count = 0;    // 一段连线中元器件计数
 int Lap_Count = 0;           // 圈数计数
 uint8_t Mileage_Record_Flag = 1; // 里程记录标志，初始为1，开始记录
 uint8_t Run_Mode_Choice = SLOW_MODE; // 运行模式选择，默认为慢速记里程模式
-=======
-int8_t Dir_Arr[15] = {-27, -20, -14, -10, -6, -4, -2, 0, 2, 4, 6, 10, 14, 20, 27};
-
-/*-------------赛道结构体--------------*/
-Racing_track_Typedef Run_Track;     // 跑赛道结构体，键显选择
-int8_t Execute_Times = 0;
-int8_t Mileage_Times = 0;
-uint8_t Line_Num_Count = 0;       // 有元器件的线的数量
-uint8_t In_Line_Ele_Count = 0;    // 一段连线中元器件计数
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
 /*----------------输出-----------------*/
 float Turn_PID_Out = 0.0;
@@ -114,13 +83,9 @@ float Left_PID_Out = 0.0;
 float Right_PID_Out = 0.0;
 Run_Mode_Enum Run_Mode = Normal_Mode;
 Run_Mode_Enum Last_Run_Mode = Normal_Mode;
-<<<<<<< HEAD
 
 uint8_t Turn_Flag = 0;
 uint8_t Straight_Flag = 0;
-=======
-Mileage_Stage_Enum Mileage_Stage = Normal_Stage;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
 // 计数的都放一起了
 Count_Typedef Count =
@@ -130,10 +95,7 @@ Count_Typedef Count =
     .Stop = 0,
     .Mileage = 0,
     .Straight = 0,
-<<<<<<< HEAD
     .Spd_Mileage = 0,
-=======
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 };
 
 /*********************************函数定义*********************************/
@@ -148,26 +110,19 @@ void Car_Go()
     Speed_Get_Count *= -1;
 
     Get_Light();
-<<<<<<< HEAD
     Light_Process();
-=======
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
     if (Speed_Get_Count == 1)
     {
         Get_Speed();
     }
     Get_IMU();
-<<<<<<< HEAD
 
     Exception_Judge();
     Mode_Update();
     Mode_Choose();
 
     Set_Speed();
-=======
-    Get_Error();
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     Set_Out();
 }
 
@@ -185,11 +140,7 @@ void Get_Speed()
     giSpeed_Right[1] = giSpeed_Right[0];
 
     giSpeed_Left[0] =  1 * encoder_get_count(TIM3_ENCODER) / 3;
-<<<<<<< HEAD
     giSpeed_Right[0] = -1 * encoder_get_count(TIM2_ENCODER) / 3;
-=======
-    giSpeed_Right[0] = 1 * encoder_get_count(TIM2_ENCODER) / 3;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
     Left_Real_Spd  = 0.5 * giSpeed_Left[0] + 0.3 * giSpeed_Left[1] + 0.2 * giSpeed_Left[2];
     Right_Real_Spd = 0.5 * giSpeed_Right[0] + 0.3 * giSpeed_Right[1] + 0.2 * giSpeed_Right[2];
@@ -206,7 +157,6 @@ void Get_Speed()
 *************************************/
 void Get_IMU()
 {
-<<<<<<< HEAD
     imu660rb_get_gyro();
 
     if (fabs(imu660rb_gyro_z) < 20)
@@ -222,19 +172,6 @@ void Get_IMU()
     if (Run_Mode == Turn_Left || Run_Mode == Turn_Right)
     {
         Gyro_Integral += imu660rb_gyro_z * 1.0 / 100.0;
-=======
-    icm20602_get_gyro();
-
-    if (fabs(icm20602_gyro_z) < 20)
-    {
-        icm20602_gyro_z = 0;
-    }
-
-    // 积分∫
-    if (Run_Mode == Turn_Left || Run_Mode == Turn_Right)
-    {
-        Gyro_Integral += icm20602_gyro_z * 1.0 / 100.0;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     }
 }
 
@@ -243,11 +180,7 @@ void Get_IMU()
 ** Description: 检查边界
 ** Others:
 *************************************/
-<<<<<<< HEAD
 uint8_t Check_Edge()
-=======
-uint8 Check_Edge()
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 {
     for (int i = 0; i < 15; i++)
     {
@@ -256,13 +189,10 @@ uint8 Check_Edge()
             return 1;
         }
     }
-<<<<<<< HEAD
     if (Track_Num > 10)
     {
         return 1;
     }
-=======
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
     return 0;
 }
@@ -270,11 +200,7 @@ uint8 Check_Edge()
 /*************************************
 ** Function: Light_Process
 ** Description: 处理光电管读值
-<<<<<<< HEAD
 ** Others: 得到Track_Arr和Track_Num
-=======
-** Others:
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 *************************************/
 void Light_Process()
 {
@@ -321,7 +247,6 @@ void Light_Process()
             memcpy(Track_Arr, Last_Track_Arr, sizeof(Last_Track_Arr));
         }
     }
-<<<<<<< HEAD
 }
 
 /*************************************
@@ -358,32 +283,10 @@ Run_Mode_Enum Mode_Update()
         case Source_Elem_Right:
             Run_Mode = Mileage_Mode;
             break;
-=======
-
-    // 出赛道判断
-    if (Track_Num == 15 || Track_Num == 0)
-    {
-        Count.Stop++;
-    }
-    else
-    {
-        Count.Stop = 0;
-    }
-
-    if (Finish_Flag == 1)
-    {
-        Finish_Count++;
-    }
-
-    if (Finish_Count > 50)
-    {
-        Stop_Flag = 1;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     }
 }
 
 /*************************************
-<<<<<<< HEAD
 ** Function: Mode_Choose
 ** Description: 模式选择
 ** Others: 
@@ -405,45 +308,6 @@ void Mode_Choose()
             Mileage_Run();
             break;
     }
-=======
-** Function: Get_Error
-** Description: 误差计算
-** Others:
-*************************************/
-void Get_Error()
-{
-    // 数据处理
-    Light_Process();
-    if (First_Mode == 0)
-    {
-        Run_Mode = Mileage_Mode;
-        First_Mode = 1;
-        Mileage_Times = Run_Track.Node_Arr_Mileage_Num[Execute_Times];
-    }
-    Run_Mode = Normal_Mode;
-    // 模式选择
-    switch (Run_Mode)
-    {
-        case Normal_Mode:
-                Normal_Run();
-                break;/*Normal_Mode*/
-        case Turn_Left:
-                Turn_Left_Run();
-                break;/*Turn_Left*/
-        case Turn_Right:
-                Turn_Right_Run();
-                break;/*Turn_Right*/
-        case Straight_Mode:
-                Straight_Run();
-                break;/*Staright*/
-        case Mileage_Mode:
-                Mileage_Mode_Run();
-                break;/*Mileage_Mode*/
-    }
-
-    // 差速计算
-    Set_Speed();
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 }
 
 /*************************************
@@ -456,37 +320,23 @@ void Normal_Run()
     gpio_set_level(P33_4, 0);
     Last_Error = Error;
 
-<<<<<<< HEAD
     if (Track_Num < 2)
     {
         Error = (Last_Error / fabs(Last_Error));
     }
     else if (Track_Num < 7 && Track_Num >= 2) // 赛道宽度小于6，正常循迹
-=======
-    if (Track_Num <= 2)
-    {
-        Error = 1.5 * Last_Error;
-    }
-    else if (Track_Num < 7 && Track_Num > 2) // 赛道宽度小于6，正常循迹
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     {
         Left_Scan_Point = Track_Arr[0];                 // 左扫描点
         Right_Scan_Point = Track_Arr[Track_Num - 1];    // 右扫描点
         Error = (Dir_Arr[Left_Scan_Point] + Dir_Arr[Right_Scan_Point]) / 2;
     }
-<<<<<<< HEAD
     else
     {
          // 异常，按规划跑
-=======
-    else        // 异常，按规划跑
-    {
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
         Error = (Dir_Arr[Left_Scan_Point] + Dir_Arr[Right_Scan_Point]) / 2;
 
         if (Check_Edge())
         {
-<<<<<<< HEAD
             if (Next_Exception == Straight_Node || Next_Exception == Normal_Elem)
             {
                 Straight_Flag = 1;
@@ -494,31 +344,6 @@ void Normal_Run()
             else if (Next_Exception == Turn_Node_Left || Next_Exception == Turn_Node_Right)
             {
                 Turn_Flag = 1;
-=======
-            switch (Run_Track.Node_Arr_Dir[Execute_Times])
-            {
-                case 1:     // 左转
-                    Run_Mode = Turn_Left;
-                    /* code */
-                    break;
-                case 2:     // 右转
-                    Run_Mode = Turn_Right;
-                    /* code */
-                    break;
-                case 4:     // 直行
-                    Run_Mode = Straight_Mode;
-                    break;
-            }
-            Execute_Times = (Execute_Times + 1) % (Run_Track.Node_Num + 1);
-            Mileage_Times = Run_Track.Node_Arr_Mileage_Num[Execute_Times];
-
-            if (Run_Track.Stop_Mode == 0)
-            {
-                if (Execute_Times == Run_Track.Node_Num)
-                {
-                    Finish_Flag = 1;
-                }
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
             }
         }
     }
@@ -531,7 +356,6 @@ void Normal_Run()
 *************************************/
 void Turn_Left_Run()
 {
-<<<<<<< HEAD
     if (Turn_Flag == 0)
     {
         Normal_Run();
@@ -567,34 +391,6 @@ void Turn_Left_Run()
             
             Execute_Times = (Execute_Times + 1) % Run_Track.Node_Num;
         }
-=======
-    Error = -30;
-    Middle = (Track_Arr[0] + Track_Arr[Track_Num - 1]) / 2;
-    gpio_set_level(P33_4, 1);
-
-    for (int i = 0; i < 15; i++)
-    {
-        if (Track_Arr[i] >= 7 && Track_Arr[i] != 0)
-        {
-            Right_Num++;
-        }
-    }
-
-    if (Track_Num < 6 && Track_Num > 1 && Middle >= 0 && Middle <= 7 && Right_Num < 2/*&& Turn_Action == Straight_Stage*/)
-    {
-        Count.Left++;
-    }
-    else
-    {
-        Count.Left = 0;
-    }
-
-    if (Count.Left > 1 && Gyro_Integral < -2600)
-    {
-        Gyro_Integral = 0;
-        Run_Mode = Mileage_Mode;
-        Count.Left = 0;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     }
 }
 
@@ -605,7 +401,6 @@ void Turn_Left_Run()
 *************************************/
 void Turn_Right_Run()
 {
-<<<<<<< HEAD
     if (Turn_Flag == 0)
     {
         Normal_Run();
@@ -640,33 +435,6 @@ void Turn_Right_Run()
             
             Execute_Times = (Execute_Times + 1) % Run_Track.Node_Num;
         }
-=======
-    Error = 30;
-    Middle = (Track_Arr[0] + Track_Arr[Track_Num - 1]) / 2;
-    gpio_set_level(P33_4, 1);
-    for (int i = 0; i < 15; i++)
-    {
-        if (Track_Arr[i] <= 7 && Track_Arr[i] != 0)
-        {
-            Left_Num++;
-        }
-    }
-
-    if (Track_Num < 6 && Track_Num > 1 && Middle >= 7 && Middle < 15 && Left_Num < 2/*&& Turn_Action == Straight_Stage*/)
-    {
-        Count.Right++;
-    }
-    else
-    {
-        Count.Right = 0;
-    }
-
-    if (Count.Right > 1 && Gyro_Integral > 2600)
-    {
-        Gyro_Integral = 0;
-        Run_Mode = Mileage_Mode;
-        Count.Right = 0;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     }
 }
 
@@ -675,7 +443,6 @@ void Turn_Right_Run()
 ** Description: 里程计
 ** Others:
 *************************************/
-<<<<<<< HEAD
 void Mileage_Run()
 {
     // 里程计积分
@@ -738,20 +505,10 @@ void Straight_Run(void)
     {
         gpio_set_level(P33_4, 1);
         Normal_Run();
-=======
-void Mileage_Mode_Run()
-{
-    if (Mileage_Times == 0)
-    {
-        Run_Mode = Normal_Mode;
-        Mileage_Stage = Normal_Stage;
-        In_Line_Ele_Count = 0;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     }
     else
     {
         // 里程计积分
-<<<<<<< HEAD
         gpio_set_level(P33_4, 1);
         if (EnableSwitch_ON)
         {
@@ -783,44 +540,6 @@ void Mileage_Mode_Run()
                 if (Run_Mode_Choice == SLOW_MODE && Lap_Count == 1)
                 {
                     Save_Mileage_To_Flash(); // 将里程数据存储到Flash
-=======
-        if (EnableSwitch_ON)
-        {
-            Last_Average_Speed = Average_Speed;
-            Average_Speed = (Left_Real_Spd + Right_Real_Spd) / 2.0; // 平均速度
-            Count.Mileage += (0.7 * Average_Speed + 0.3 * Last_Average_Speed); // 计算里程(32 mm)
-        }
-        if (Count.Mileage < Run_Track.Node_Arr_Mileage_Normal[Line_Num_Count][In_Line_Ele_Count])
-        {
-            // 正常循迹
-            Mileage_Stage = Normal_Stage;
-            Mileage_Run_Stage_1();
-        }
-        else if (Count.Mileage < (Run_Track.Node_Arr_Mileage_Normal[Line_Num_Count][In_Line_Ele_Count]
-                                      + Run_Track.Node_Arr_Mileage_Element[Line_Num_Count][In_Line_Ele_Count]))
-        {
-            // 直走
-            Mileage_Stage = Straight_Stage;
-            Mileage_Run_Stage_2();
-        }
-        else
-        {
-            In_Line_Ele_Count++;
-            Mileage_Stage = Normal_Stage;
-            Count.Mileage = 0;
-            if (In_Line_Ele_Count == Run_Track.Node_Arr_Mileage_Num[Execute_Times])
-            {
-                Run_Mode = Normal_Mode;
-                Line_Num_Count++;
-                In_Line_Ele_Count = 0;
-            }
-
-            if (Run_Track.Stop_Mode == 1)
-            {
-                if (Line_Num_Count == Run_Track.Element_Num - 1)
-                {
-                    Finish_Flag = 1;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
                 }
             }
         }
@@ -828,58 +547,6 @@ void Mileage_Mode_Run()
 }
 
 /*************************************
-<<<<<<< HEAD
-=======
-** Function: Mileage_Run_Stage_1
-** Description: 里程计(1)
-** Others:
-*************************************/
-void Mileage_Run_Stage_1()
-{
-    gpio_set_level(P33_4, 0);
-    if (Track_Num == 0)
-    {
-        Error = Last_Error;
-    }
-    else if (Track_Num < 6 && Track_Num > 0) // 赛道宽度小于6，正常循迹
-    {
-        Last_Error = Error;
-        Left_Scan_Point = Track_Arr[0];                 // 左扫描点
-        Right_Scan_Point = Track_Arr[Track_Num - 1];    // 右扫描点
-        Error = (Dir_Arr[Left_Scan_Point] + Dir_Arr[Right_Scan_Point]) / 2;
-    }
-    else
-    {
-        Error = Last_Error;
-    }
-}
-
-/*************************************
-** Function: Mileage_Run_Stage_2
-** Description: 里程计(2)
-** Others:
-*************************************/
-void Mileage_Run_Stage_2()
-{
-    gpio_set_level(P33_4, 1);
-    TCA9555_All_LED_On();
-
-    switch (Run_Track.Node_Arr_Mileage_Dir[Line_Num_Count][In_Line_Ele_Count])
-    {
-        case 0:
-            Error = 0;
-            break;
-        case 1:
-            Error = -13;
-            break;
-        case 2:
-            Error = 13;
-            break;
-    }
-}
-
-/*************************************
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Function: Set_Speed
 ** Description: 期望速度计算
 ** Others:
@@ -891,7 +558,6 @@ void Set_Speed()
     PID_cleardata(&Turn_PID);
     PID_cleardata(&Gyro_PID);
 
-<<<<<<< HEAD
     Turn_PID_Out  = PID_calc(&Turn_PID, 0, (float)(Error / 100.0));
 
     Gyro_PID_Out = PID_calc(&Gyro_PID, 0, (-Turn_PID_Out) + Gyro_Z[0]);
@@ -953,19 +619,6 @@ void Set_Speed()
     {
         Left_Exp_Spd = 25 - Gyro_PID_Out;
         Right_Exp_Spd = 25 + Gyro_PID_Out;
-=======
-    Turn_PID_Out  = PID_calc(&Turn_PID, 0, (float)Error);
-
-    Gyro_PID_Out = PID_calc(&Gyro_PID, 0, (-Turn_PID_Out) - icm20602_gyro_z);
-
-    Left_Exp_Spd = Basic_Speed - Gyro_PID_Out;
-    Right_Exp_Spd = Basic_Speed + Gyro_PID_Out;
-
-    if (Run_Mode == Turn_Left || Run_Mode == Turn_Right)
-    {
-        Left_Exp_Spd = 20 - Gyro_PID_Out;
-        Right_Exp_Spd = 20 + Gyro_PID_Out;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     }
 
     if (EnableSwitch_ON)
@@ -977,11 +630,7 @@ void Set_Speed()
 
 /*************************************
 ** Function: Soft_Start
-<<<<<<< HEAD
 ** Description: 缓启动(暂时没用)
-=======
-** Description: 缓启动
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 ** Others:
 *************************************/
 void Soft_Start()
@@ -1020,7 +669,6 @@ void Set_Out(void)
     }
 
     // 风扇
-<<<<<<< HEAD
     if (Stop_Flag == 0)
     {
         pwm_set_duty(Suction_Motor_IN1, 0);
@@ -1035,21 +683,12 @@ void Set_Out(void)
     if (EnableSwitch_ON && Stop_Flag == 0) // 使能开关
     {
         if (Left_PID_Out == 0)
-=======
-    pwm_set_duty(Suction_Motor_IN1, 0);
-    pwm_set_duty(Suction_Motor_IN2, 10000);
-
-    if (EnableSwitch_ON && Stop_Flag == 0) // 使能开关
-    {
-        if (Left_PID_Out == 0 || Stop_Flag == 1)
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
         {
             pwm_set_duty(Left_Motor_IN1, 10000);
             pwm_set_duty(Left_Motor_IN2, 10000);
         }
         else if (Left_PID_Out > 0)  // 正转
         {
-<<<<<<< HEAD
             pwm_set_duty(Left_Motor_IN1, (Left_PID_Out + 10000) / 2);
             pwm_set_duty(Left_Motor_IN2, 0);
         }
@@ -1060,18 +699,6 @@ void Set_Out(void)
         }
 
         if (Right_PID_Out == 0)
-=======
-            pwm_set_duty(Left_Motor_IN1, 0);
-            pwm_set_duty(Left_Motor_IN2, (Left_PID_Out + 10000) / 2);
-        }
-        else                    // 反转
-        {
-            pwm_set_duty(Left_Motor_IN1, (fabs(Left_PID_Out) + 10000) / 2);
-            pwm_set_duty(Left_Motor_IN2, 0);
-        }
-
-        if (Right_PID_Out == 0 || Stop_Flag == 1)
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
         {
             pwm_set_duty(Right_Motor_IN1, 10000);
             pwm_set_duty(Right_Motor_IN2, 10000);
@@ -1098,7 +725,6 @@ void Set_Out(void)
         PID_cleardata(&Right_PID);
     }
 
-<<<<<<< HEAD
 //    pwm_set_duty(Left_Motor_IN1, 7000);
 //    pwm_set_duty(Left_Motor_IN2, 8000);
 }
@@ -1160,33 +786,5 @@ void Load_Mileage_From_Flash(void)
     {
         // 数据有效，设置Mileage_Record_Flag为0，避免重复记录
         Mileage_Record_Flag = 0;
-=======
-
-}
-
-/*************************************
-** Function: Straight_Run
-** Description: 直行
-** Others:
-*************************************/
-void Straight_Run(void)
-{
-    Error = 0;
-    Middle = (Track_Arr[0] + Track_Arr[Track_Num - 1]) / 2;
-
-    if (Track_Num < 6 && Track_Num > 1 && Middle > 3 && Middle < 12)
-    {
-        Count.Straight++;
-    }
-    else
-    {
-        Count.Straight = 0;
-    }
-
-    if (Count.Straight > 5)
-    {
-        Run_Mode = Mileage_Mode;
-        Count.Straight = 0;
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     }
 }

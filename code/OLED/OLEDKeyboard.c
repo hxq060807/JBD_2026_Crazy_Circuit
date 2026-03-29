@@ -4,7 +4,6 @@ File name: OLEDKeyboard.h
 Author: TYUT JBD
 Version:2.0               Date: 2024.12.07
 Description:  OLEDKeyboard.c
-<<<<<<< HEAD
 Others:      æ— 
 Function List:
 History:
@@ -12,20 +11,10 @@ History:
 JBD       2016.10.21  0.0        åˆå§‹
 AmaZzzing 2016.11.12  1.0        åˆæ­¥å®Œæˆæž„æž¶
 SUV       2024.12.07  2.0        åŸºäºŽæ–°åº“é‡æž„
-=======
-Others:      ÎÞ
-Function List:
-History:
-<author>  <time>      <version > <desc>
-JBD       2016.10.21  0.0        ³õÊ¼
-AmaZzzing 2016.11.12  1.0        ³õ²½Íê³É¹¹¼Ü
-SUV       2024.12.07  2.0        »ùÓÚÐÂ¿âÖØ¹¹
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 **************************************************/
 
 #include "OLEDKeyboard.h"
 #include "Ctrl.h"
-<<<<<<< HEAD
 #include "zf_driver_flash.h"
 
 // è¿è¡Œæ¨¡å¼å®šä¹‰
@@ -33,15 +22,10 @@ SUV       2024.12.07  2.0        »ùÓÚÐÂ¿âÖØ¹¹
 #define FAST_MODE       1   // å¿«é€Ÿè·‘æˆç»©æ¨¡å¼
 
 /* =========== å˜é‡å®šä¹‰ =========== */
-=======
-
-/* =========== ±äÁ¿¶¨Òå =========== */
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 uint32 input = 0;
 uint32 Speed_OKb[1] = {0};
 uint32 PID_OKb[8] = {0};
 uint32 DBG_OKb[3] = {0};
-<<<<<<< HEAD
 uint32 Current_Track_Page = 3; // é»˜è®¤ä»Žé¡µ3åŠ è½½
 
 /* ========= å†…éƒ¨å‡½æ•°å£°æ˜Ž ========== */
@@ -55,25 +39,10 @@ uint32 Current_Track_Page = 3; // é»˜è®¤ä»Žé¡µ3åŠ è½½
 void OLED_Input(void)
 {
     CH455_Init(); //IICé€šä¿¡
-=======
-
-/* ========= ÄÚ²¿º¯ÊýÉùÃ÷ ========== */
-
-/* =========== º¯Êý¶¨Òå ============ */
-/*************************************
-** Function: OLED_Input
-** Description: ¿ª»úÏÔÊ¾
-** Others:ÎÞ
-*************************************/
-void OLED_Input(void)
-{
-    CH455_Init(); //IICÍ¨ÐÅ
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 
     int32 OLED_Choose;
 
     OLED_Show_Str(20, 3, "Nothing or Best.", TextSize_F6x8);
-<<<<<<< HEAD
     OLED_Show_Str(0, 6, "Let's do it!!!", TextSize_F6x8);
     KeyboardInput(88, 6, TextSize_F6x8, 1.0);
     OLED_CLS();
@@ -902,37 +871,6 @@ void OLED_Input(void)
     Run_Mode_Choice = SLOW_MODE;
 
     //======é€‰æ‹©é€Ÿåº¦======
-=======
-    OLED_Choose = KeyboardInput(88, 6, TextSize_F8x16, 1.0);
-
-    //======ÏÈÑ¡ÈüµÀ======
-    switch (OLED_Choose)
-    {
-        case 1:   // Ô¤Èü---´®
-            Run_Track = Pre_Contest_1;
-            break;
-        case 2:   // Ô¤Èü---²¢
-            Run_Track = Pre_Contest_2;
-            break;
-        case 3:   // Ô¤Èü---´®+²¢
-            Run_Track = Pre_Contest_3;
-            break;
-        case 4:   // ¾öÈü---´®
-            Run_Track = Final_Contest_1;
-            break;
-        case 5:   // ¾öÈü---²¢
-            Run_Track = Final_Contest_2;
-            break;
-        case 6:   // ¾öÈü---´®+²¢
-            Run_Track = Final_Contest_3;
-            break;
-        default:  // Ä¬ÈÏÔ¤Èü´®
-            Run_Track = Pre_Contest_1;
-    }
-    OLED_CLS();
-
-    //======Ñ¡ÔñËÙ¶È======
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     flash_read_page(0, 0, Speed_OKb, 1);
     OLED_Show_Str(0, 0, "B_Spd", TextSize_F6x8);       OLED_Show_Numbers(47, 0, Speed_OKb[0], TextSize_F6x8);
 
@@ -942,7 +880,6 @@ void OLED_Input(void)
         Speed_OKb[0] = input;
     }
     OLED_CLS();
-<<<<<<< HEAD
     // æ“¦
     flash_erase_page(0, 0);
     // å­˜
@@ -953,29 +890,13 @@ void OLED_Input(void)
     OLED_CLS();
 
     //======è°ƒå‚======
-=======
-    // ²Á
-    flash_erase_page(0, 0);
-    // ´æ
-    flash_write_page(0, 0, Speed_OKb, 1);
-
-    // ÆäËû²ÎÊý
-    OLED_Choose = KeyboardInput(88, 6, TextSize_F8x16, 1.0);
-    OLED_CLS();
-
-    //======µ÷²Î======
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     switch (OLED_Choose)
     {
         case 1: // PID
         {
             flash_read_page(0, 1, PID_OKb, 8);
 
-<<<<<<< HEAD
             // è½®PID
-=======
-            // ÂÖPID
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
             OLED_Show_Str(0, 0, "L_P", TextSize_F6x8);       OLED_Show_Numbers(47, 0, PID_OKb[0], TextSize_F6x8);
             OLED_Show_Str(0, 2, "L_I", TextSize_F6x8);       OLED_Show_Numbers(47, 2, PID_OKb[1], TextSize_F6x8);
             OLED_Show_Str(0, 4, "R_P", TextSize_F6x8);       OLED_Show_Numbers(47, 4, PID_OKb[2], TextSize_F6x8);
@@ -991,11 +912,7 @@ void OLED_Input(void)
             }
             OLED_CLS();
 
-<<<<<<< HEAD
             // æ–¹å‘PID
-=======
-            // ·½ÏòPID
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
             OLED_Show_Str(0, 0, "T_P", TextSize_F6x8);       OLED_Show_Numbers(47, 0, PID_OKb[4], TextSize_F6x8);
             OLED_Show_Str(0, 2, "T_D", TextSize_F6x8);       OLED_Show_Numbers(47, 2, PID_OKb[5], TextSize_F6x8);
             OLED_Show_Str(0, 4, "G_P", TextSize_F6x8);       OLED_Show_Numbers(47, 4, PID_OKb[6], TextSize_F6x8);
@@ -1018,7 +935,6 @@ void OLED_Input(void)
                 }
             }
             OLED_CLS();
-<<<<<<< HEAD
             // æ“¦
             flash_erase_page(0, 1);
             // å­˜
@@ -1030,19 +946,6 @@ void OLED_Input(void)
             flash_read_page(0, 2, DBG_OKb, 3);
 
             // è½®PID
-=======
-            // ²Á
-            flash_erase_page(0, 1);
-            // ´æ
-            flash_write_page(0, 1, PID_OKb, 8);
-        }break;/*OLED_INPUT---PID*/
-
-        case 2: // µ÷ÊÔ
-        {
-            flash_read_page(0, 2, DBG_OKb, 3);
-
-            // ÂÖPID
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
             OLED_Show_Str(0, 0, "Exp_G", TextSize_F6x8);       OLED_Show_Numbers(47, 0, DBG_OKb[0], TextSize_F6x8);
             OLED_Show_Str(0, 2, "Exp_L", TextSize_F6x8);       OLED_Show_Numbers(47, 2, DBG_OKb[1], TextSize_F6x8);
             OLED_Show_Str(0, 4, "Exp_R", TextSize_F6x8);       OLED_Show_Numbers(47, 4, DBG_OKb[2], TextSize_F6x8);
@@ -1052,7 +955,6 @@ void OLED_Input(void)
                 input = KeyboardInput(90, 4*i, TextSize_F6x8, 1.0);
                 if (input != 0)
                 {
-<<<<<<< HEAD
                     DBG_OKb[i] = input;
                 }
             }
@@ -1060,15 +962,6 @@ void OLED_Input(void)
             // æ“¦
             flash_erase_page(0, 2);
             // å­˜
-=======
-                    PID_OKb[i] = input;
-                }
-            }
-            OLED_CLS();
-            // ²Á
-            flash_erase_page(0, 2);
-            // ´æ
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
             flash_write_page(0, 2, DBG_OKb, 3);
         }break;/*OLED_INPUT---DEBUG*/
     }
@@ -1076,21 +969,12 @@ void OLED_Input(void)
 
 /*************************************
 ** Function: OLED_Data_Load
-<<<<<<< HEAD
 ** Description: OLEDå‚æ•°åŠ è½½
 ** Others:æ— 
 *************************************/
 void OLED_Data_Load()
 {
     // PIDå‚æ•°
-=======
-** Description: OLED²ÎÊý¼ÓÔØ
-** Others:ÎÞ
-*************************************/
-void OLED_Data_Load()
-{
-    // PID²ÎÊý
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
     flash_read_page(0, 1, &PID_OKb, 8);
     Left_PID.kp = PID_OKb[0];
     Left_PID.ki = PID_OKb[1] * 0.01;
@@ -1101,7 +985,6 @@ void OLED_Data_Load()
     Gyro_PID.kp = PID_OKb[6] * 0.001;
     Gyro_PID.kd = PID_OKb[7] * 0.001;
 
-<<<<<<< HEAD
     // åŸºç¡€é€Ÿåº¦
     flash_read_page(0, 0, &Speed_OKb, 1);
     Basic_Speed = Speed_OKb[0];
@@ -1129,26 +1012,12 @@ void OLED_Data_Load()
     
     // åŠ è½½é‡Œç¨‹æ•°æ®
     Load_Mileage_From_Flash();
-=======
-    // »ù´¡ËÙ¶È
-    flash_read_page(0, 0, &Speed_OKb, 1);
-    Basic_Speed = Speed_OKb[0];
-
-    // µ÷ÊÔ²ÎÊý
-    flash_read_page(0, 3, &DBG_OKb, 1);
-
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 }
 
 /*************************************
 ** Function: OLED_Display
-<<<<<<< HEAD
 ** Description: OLEDå‚æ•°æ˜¾ç¤º
 ** Others:æ— 
-=======
-** Description: OLED²ÎÊýÏÔÊ¾
-** Others:ÎÞ
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
 *************************************/
 void OLED_Display(void)
 {
@@ -1158,7 +1027,3 @@ void OLED_Display(void)
     OLED_Show_Str(0, 4, "R_Spd", TextSize_F6x8);    OLED_Show_Numbers(77, 4, Right_Exp_Spd, TextSize_F6x8);
     OLED_Show_Str(0, 6, "Err", TextSize_F6x8);    OLED_Show_Numbers(77, 6, Error, TextSize_F6x8);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 447b0a910c21e5fa7d2029967042733f6456e64c
